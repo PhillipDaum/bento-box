@@ -1,0 +1,165 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap');
+
+/* colors */
+:root {
+  --purple-100: #DBD1FC;
+  --purple-500: #7551DC;
+  --yellow-100: #f9eee2;
+  --yellow-500: #ffCC6a;
+  --white: #ffffff;
+  --black: #121212;
+  --light: #e2e2e2fa;
+}
+
+/* body */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* backgrounds with rounded corners, padding, and flexbox in a column */
+.bg-light {
+  background-color: var(--light);
+  border-radius: .5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem;
+}
+.bg-purple-light {
+  background-color: var(--purple-100);
+  border-radius: .5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem;
+}
+.bg-purple-dark {
+  background-color: var(--purple-500);
+  border-radius: .5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem;
+}
+.bg-white {
+  background-color: var(--white);
+  border-radius: .5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem;
+}
+.bg-yellow-light {
+  background-color: var(--yellow-100);
+  border-radius: .5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem;
+}
+.bg-yellow-dark {
+  background-color: var(--yellow-500);
+  border-radius: .5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem;
+}
+
+/* padding modifications */
+.no-bottom-padding {
+  padding-bottom: 0;
+}
+
+/* Flexbox options */
+.align-items-center {
+  align-items: center;
+}
+
+/* image help - responsive and extra padding */
+img {
+  max-width: 100%;
+  height: auto;
+}
+.img-pad-right {
+  padding-right: 3rem;
+}
+.img-small {
+  max-width: 12rem;
+}
+
+/* typography */
+.text-preset-1 {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500; /* Medium */
+  font-size: 3.875rem; /* 62px / 16 */
+  line-height: 93.5%;
+  letter-spacing: -0.1875rem; /* -3px / 16 */
+}
+.text-preset-2 {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500; /* Medium */
+  font-size: 2.5rem; /* 40px / 16 */
+  line-height: 90%;
+  letter-spacing: -0.125rem; /* -2px / 16 */
+}
+.text-preset-3 {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500; /* Medium */
+  font-size: 2rem; /* 32px / 16 */
+  line-height: 87.5%;
+  letter-spacing: -0.125rem; /* -2px / 16 */
+}
+.text-preset-4 {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400; /* Regular */
+  font-size: 1.125rem; /* 18px / 16 */
+  line-height: 111%;
+  letter-spacing: 0rem; /* 0px / 16 */
+}
+
+/* text colors and styles */
+.text-white {
+  color: var(--white);
+}
+.text-purple {
+  color: var(--purple-500);
+}
+/* is this 500 or 100? */
+.text-yellow {
+  color: var(--yellow-500);
+}
+.text-italic {
+  font-style: italic;
+}
+.text-center {
+  text-align: center;
+}
+
+/* grid and grid helpers */
+.grid {
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+/* media queries for tablet and desktop */
+/* tablet */
+@media (min-width: 650px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .tablet-2-col {
+    grid-column: span 2;
+  }
+  .space-out {
+    flex-direction: row;
+  }
+  /* WHAt???? */
+  .faces {
+    grid-column: 2/3;
+  }
+}
+/* desktop */
+@media (min-width: 1000px) {
+  .grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
