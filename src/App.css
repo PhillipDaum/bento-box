@@ -18,6 +18,8 @@ body {
   padding: 0;
 }
 
+
+/* utility classes */
 /* backgrounds with rounded corners, padding, and flexbox in a column */
 .bg-light {
   background-color: var(--light);
@@ -140,6 +142,16 @@ img {
   grid-template-columns: 1fr;
 }
 
+/* custom classes */
+.faces-p {
+  display: flex;
+  flex-direction: column;
+}
+.faces-p p {
+  margin: .5rem;
+}
+
+
 /* media queries for tablet and desktop */
 /* tablet */
 @media (min-width: 650px) {
@@ -151,15 +163,13 @@ img {
   }
   .space-out {
     flex-direction: row;
-  }
-  /* WHAt???? */
-  .faces {
-    grid-column: 2/3;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 /* desktop */
 @media (min-width: 1000px) {
   .grid{
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
