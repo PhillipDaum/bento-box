@@ -1,3 +1,5 @@
+/* try using % instead of rem on images, maybe modify media queries */
+
 /* font */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap');
 
@@ -83,6 +85,7 @@ img {
 }
 .img-small {
   max-width: 12rem;
+
 }
 .overflow-hidden {
   overflow: hidden;
@@ -174,8 +177,6 @@ img {
 .faces-p p {
   margin: .5rem;
 }
-
-
 
 /* media queries for tablet and desktop */
 /* tablet */
