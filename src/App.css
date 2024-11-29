@@ -170,12 +170,15 @@ img {
 .five img {
   max-width: 18rem;
 }
+.eight img {
+  width: 100%;
+}
 .faces-p {
   display: flex;
   flex-direction: column;
 }
 .faces-p p {
-  margin: .5rem;
+  margin: 0.5rem;
 }
 
 /* media queries for tablet and desktop */
@@ -238,4 +241,14 @@ img {
     grid-column: 1/2;
     grid-row: 3/7;
   }
+}
+
+/* hide overflow at box's edge  */
+.two img {
+  max-width: 200%;
+  width: 20rem;
+  display: block;
+}
+.two {
+  overflow: hidden;
 }
