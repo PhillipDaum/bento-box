@@ -12,7 +12,7 @@ import createPost from './assets/illustration-create-post.webp'
 function App() {
   return (
     <>
-    <div className='bg-light align-items-center'>
+    <div className='align-items-center main'>
     <div className='grid'>
         <div className='bg-purple-dark align-items-center text-center tablet-2-col one'>
           <h1 className='text-preset-1 text-white'>Social Media <span className='text-yellow'>10x</span><span className='text-italic'> Faster</span> with AI</h1>

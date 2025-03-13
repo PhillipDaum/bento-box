@@ -20,6 +20,14 @@ body {
   padding: 0;
 }
 
+/* main content container */
+.main {
+  background-color: var(--light);
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem;
+}
+
 /* utility classes */
 /* backgrounds with rounded corners, padding, and flexbox in a column */
 .bg-light {
